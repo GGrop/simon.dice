@@ -1,0 +1,30 @@
+.cuadrados{
+    margin-top: 50px;
+}
+.cuadrado{
+    height: 200px;
+    margin: 10px;
+}
+body{
+    background-color: rgb(189, 189, 189);
+}
+#cuadrado0{
+    background-color: red;
+    opacity: 0.3;
+    transition: 500ms;
+}
+#cuadrado1{
+    background-color: green;
+    opacity: 0.3;
+    transition: 500ms;
+}
+#cuadrado2{
+    background-color: blue;
+    opacity: 0.3;
+    transition: 500ms;
+}
+#cuadrado3{
+    background-color: yellow;
+    opacity: 0.3;
+    transition: 500ms;
+}

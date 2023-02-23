@@ -5,10 +5,42 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet'  href='node_modules\bootstrap\dist\css\bootstrap.min.css'>
+    <link rel='stylesheet'  href='index.css'>
+
 </head>
 <body>
-    
+    <div class="container text-center">
+        <div class="row">
+            <div class="alert alert-primary" role="alert" id="estadoDeJuego">
+                Bienvenido! clickea en "Empezar" para comenzar a jugar
+            </div>
+            <div class="col">   
+                Nivel: <strong id="nivel"></strong>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="empezar">Empezar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container cuadrados">
+        <div class="row">
+            <div class="col" >   
+                <div id="cuadrado0" class="cuadrado"></div>
+            </div>
+            <div class="col">   
+                <div id="cuadrado1" class="cuadrado"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">   
+                <div id="cuadrado2" class="cuadrado"></div>
+            </div>
+            <div class="col">   
+                <div id="cuadrado3" class="cuadrado"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
