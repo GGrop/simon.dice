@@ -44,13 +44,13 @@ const bloquearJuegoUsuario=()=>{
 
 const obtenerCuadradoAleatorio=()=>{
     const $cuadrados = document.querySelectorAll('.cuadrado')
-    let indice = Math.floor(Math.random()* $cuadrados.length)
+    const indice = Math.floor(Math.random()* $cuadrados.length)
     return $cuadrados[indice]
 }
 
 const ejecucionmanejarTurnoMaquina=(secuencia)=>{
     secuencia.forEach(function($cuadrado,i){
-        let DELAY = 1000*i
+        const DELAY = 1000*i
         setTimeout(function(){
             resaltar($cuadrado)
         },DELAY)
