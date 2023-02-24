@@ -44,8 +44,8 @@ const reiniciarJuego=()=>{
 }
 
 const manejarTurnoMaquina=($cuadradoAleatorio)=>{
-    const TURNO_MAQUINA_ALERT = 'Turno de la maquina...'
-    estadoDeJuego(TURNO_MAQUINA_ALERT)
+    const TURNO_MAQUINA_ALERTA = 'Turno de la maquina...'
+    estadoDeJuego(TURNO_MAQUINA_ALERTA)
     bloquearJuegoUsuario()
     secuenciaMaquina.push($cuadradoAleatorio)
     ejecucionmanejarTurnoMaquina(secuenciaMaquina)
