@@ -1,14 +1,22 @@
 {
-  "name": "clase10-simon-dice",
+  "name": "simon.dice",
   "version": "1.0.0",
   "description": "simon dice de r-programa",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GGrop/simon.dice.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+  "bugs": {
+    "url": "https://github.com/GGrop/simon.dice/issues"
+  },
+  "homepage": "https://github.com/GGrop/simon.dice#readme"
 }
