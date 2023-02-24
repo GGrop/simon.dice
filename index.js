@@ -54,7 +54,6 @@ const manejarTurnoMaquina=($cuadradoAleatorio)=>{
 const bloquearJuegoUsuario=()=>{
     document.querySelectorAll('.cuadrado').forEach(function($cuadrado){
         $cuadrado.onclick = function(){
-            //no hago nada
         }
     })
 }
