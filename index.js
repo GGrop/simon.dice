@@ -37,7 +37,7 @@ const gestionarRondas=()=>{
     },DELAY_JUGADOR)
 }
 
-const ReinciarVariables=()=>{
+const reiniciarJuego=()=>{
     secuenciaMaquina = []
     secuenciaJugador = []
     nivel = ''
