@@ -30,7 +30,7 @@ const empezarJuego=()=>{
 
 const gestionarRondas=()=>{
     const $cuadradoAleatorio = obtenerCuadradoAleatorio()
-    turnoMaquina($cuadradoAleatorio)
+    manejarTurnoMaquina($cuadradoAleatorio)
     let DELAY_JUGADOR = secuenciaMaquina.length*1050
     setTimeout(function(){
         turnoJugador()
@@ -40,16 +40,15 @@ const gestionarRondas=()=>{
 const reiniciarJuego=()=>{
     secuenciaMaquina = []
     secuenciaJugador = []
-    nivel = ''
-    document.querySelector('#nivel').textContent = nivel
+    document.querySelector('#nivel').textContent = ''
 }
 
-const turnoMaquina=($cuadradoAleatorio)=>{
+const manejarTurnoMaquina=($cuadradoAleatorio)=>{
     const TURNO_MAQUINA_ALERT = 'Turno de la maquina...'
     estadoDeJuego(TURNO_MAQUINA_ALERT)
     bloquearJuegoUsuario()
     secuenciaMaquina.push($cuadradoAleatorio)
-    ejecucionTurnoMaquina(secuenciaMaquina)
+    ejecucionmanejarTurnoMaquina(secuenciaMaquina)
 }
 
 const bloquearJuegoUsuario=()=>{
@@ -66,7 +65,7 @@ const obtenerCuadradoAleatorio=()=>{
     return $cuadrados[indice]
 }
 
-const ejecucionTurnoMaquina=(secuencia)=>{
+const ejecucionmanejarTurnoMaquina=(secuencia)=>{
     secuencia.forEach(function($cuadrado,i){
         let DELAY = 1000*i
         setTimeout(function(){
