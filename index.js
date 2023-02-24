@@ -32,7 +32,7 @@ const manejarTurnoMaquina=($cuadradoAleatorio)=>{
     estadoDeJuego(TURNO_MAQUINA_ALERTA)
     bloquearJuegoUsuario()
     secuenciaMaquina.push($cuadradoAleatorio)
-    ejecucionmanejarTurnoMaquina(secuenciaMaquina)
+    ejecucionTurnoMaquina(secuenciaMaquina)
 }
 
 const bloquearJuegoUsuario=()=>{
@@ -48,12 +48,12 @@ const obtenerCuadradoAleatorio=()=>{
     return $cuadrados[indice]
 }
 
-const ejecucionmanejarTurnoMaquina=(secuencia)=>{
+const ejecucionTurnoMaquina=(secuencia)=>{
     secuencia.forEach(function($cuadrado,i){
-        const DELAY = 1000*i
+        const DELAY_MAQUINA = 1000*i
         setTimeout(function(){
             resaltar($cuadrado)
-        },DELAY)
+        },DELAY_MAQUINA)
     })
 }
 
