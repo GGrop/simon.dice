@@ -4,6 +4,7 @@
 .cuadrado{
     height: 200px;
     margin: 10px;
+    cursor: pointer;
 }
 body{
     background-color: rgb(189, 189, 189);
