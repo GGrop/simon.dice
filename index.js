@@ -14,10 +14,10 @@ const empezarJuego=()=>{
 
 const gestionarRondas=()=>{
     const $cuadrado = obtenerCuadradoAleatorio()
-    manejarTurnoMaquina($cuadradoAleatorio)
+    manejarTurnoMaquina($cuadrado)
     const DELAY_JUGADOR = secuenciaMaquina.length*1050
     setTimeout(function(){
-        turnoJugador()
+        manejarTurnoJugador()
     },DELAY_JUGADOR)
 }
 
@@ -65,7 +65,7 @@ const resaltar=($cuadrado)=>{
     },500)
 }
 
-const turnoJugador=()=>{
+const manejarTurnoJugador=()=>{
     secuenciaJugador = []
     const TURNO_JUGADOR_ALERT = 'Es tu turno jugador!'
     estadoDeJuego(TURNO_JUGADOR_ALERT)
