@@ -29,7 +29,7 @@ const reiniciarJuego=()=>{
 
 const manejarTurnoMaquina=($cuadradoAleatorio)=>{
     const TURNO_MAQUINA_ALERTA = 'Turno de la maquina...'
-    estadoDeJuego(TURNO_MAQUINA_ALERTA)
+    cambiarEstadoJuego(TURNO_MAQUINA_ALERTA)
     bloquearJuegoUsuario()
     secuenciaMaquina.push($cuadradoAleatorio)
     ejecucionTurnoMaquina(secuenciaMaquina)
@@ -68,7 +68,7 @@ const resaltar=($cuadrado)=>{
 const manejarTurnoJugador=()=>{
     secuenciaJugador = []
     const TURNO_JUGADOR_ALERT = 'Es tu turno jugador!'
-    estadoDeJuego(TURNO_JUGADOR_ALERT)
+    cambiarEstadoJuego(TURNO_JUGADOR_ALERT)
     document.querySelectorAll('.cuadrado').forEach(function($cuadrado){
         $cuadrado.onclick = clickUsuario
     })
@@ -95,7 +95,7 @@ const comparacionSecuencias=($cuadradoUsuario)=>{
 }
 
 const perder=()=>{
-    estadoDeJuego('Perdiste :( vuelvelo a intentar!')
+    cambiarEstadoJuego('Perdiste :( vuelvelo a intentar!')
     bloquearJuegoUsuario()
     ReinciarVariables()
 }
@@ -106,7 +106,7 @@ const subirDeNivel=()=>{
     gestionarRondas()
 }
 
-const estadoDeJuego=(texto)=>{
+const cambiarEstadoJuego=(texto)=>{
     const $alert = document.querySelector('#estadoDeJuego')
     $alert.classList.add('alert-primary');
         if(/Perdiste/.test(texto)){
