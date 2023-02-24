@@ -8,7 +8,7 @@ document.querySelector('#empezar').onclick = function(e){
 
 
 const empezarJuego=()=>{
-    ReinciarVariables()
+    reiniciarJuego()
     gestionarRondas()
 }
 
@@ -97,7 +97,7 @@ const comparacionSecuencias=($cuadradoUsuario)=>{
 const perder=()=>{
     cambiarEstadoJuego('Perdiste :( vuelvelo a intentar!')
     bloquearJuegoUsuario()
-    ReinciarVariables()
+    reiniciarJuego()
 }
 
 const subirDeNivel=()=>{
