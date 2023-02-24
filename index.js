@@ -13,7 +13,7 @@ const empezarJuego=()=>{
 }
 
 const gestionarRondas=()=>{
-    const $cuadradoAleatorio = obtenerCuadradoAleatorio()
+    const $cuadrado = obtenerCuadradoAleatorio()
     manejarTurnoMaquina($cuadradoAleatorio)
     const DELAY_JUGADOR = secuenciaMaquina.length*1050
     setTimeout(function(){
