@@ -24,7 +24,7 @@ const gestionarRondas=()=>{
 const reiniciarJuego=()=>{
     secuenciaMaquina = []
     secuenciaJugador = []
-    document.querySelector('#nivel').textContent = ''
+    document.querySelector('#nivel').textContent = 0
 }
 
 const manejarTurnoMaquina=($cuadradoAleatorio)=>{
