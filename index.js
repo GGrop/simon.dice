@@ -15,7 +15,7 @@ const empezarJuego=()=>{
 const gestionarRondas=()=>{
     const $cuadradoAleatorio = obtenerCuadradoAleatorio()
     manejarTurnoMaquina($cuadradoAleatorio)
-    let DELAY_JUGADOR = secuenciaMaquina.length*1050
+    const DELAY_JUGADOR = secuenciaMaquina.length*1050
     setTimeout(function(){
         turnoJugador()
     },DELAY_JUGADOR)
